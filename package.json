@@ -11,7 +11,7 @@
     "prepare": "husky",
     "lint-staged": "lint-staged",
     "biome:lint": "npx @biomejs/biome lint",
-    "lint": "npm run biome:lint",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "clear": "rm -fr node_modules && rm -fr .pnpm-store && rm -fr pnpm-lock.yaml && pnpm --filter \"./packages-**/**\" clear",
     "boot": "pnpm run clear && pnpm install"
   },
