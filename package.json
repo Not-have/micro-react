@@ -10,7 +10,7 @@
     "lint-staged": "lint-staged",
     "biome:lint": "npx @biomejs/biome lint",
     "lint": "npm run biome:lint",
-    "clear": "rm -fr node_modules && .pnpm-store && pnpm-lock.yaml && pnpm --filter \"./packages-**\" clear",
+    "clear": "rm -fr node_modules && rm -fr .pnpm-store && rm -fr pnpm-lock.yaml && pnpm --filter \"./packages-**/**\" clear",
     "boot": "pnpm run clear && pnpm install"
   },
   "keywords": [],
