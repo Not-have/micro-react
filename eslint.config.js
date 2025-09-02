@@ -13,10 +13,7 @@ export default [
       "node_modules",
       "dist",
       "build",
-      "public",
-      "forge.env.d.ts",
-      "**/.umi/**",
-      ".pnpm-store"
+      "public"
     ],
     rules: {}
   }

@@ -1,0 +1,71 @@
+# 依赖目录
+node_modules/
+.pnpm-store/
+
+# 构建输出目录
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# 缓存目录
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+
+# 配置文件
+*.config.js
+*.config.ts
+*.config.mjs
+*.config.cjs
+
+# UmiJS 相关
+**/.umi/
+.umi-production/
+.umi-test/
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# 日志文件
+*.log
+logs/
+
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+
+# 文档
+docs/
+*.md
+
+# 静态资源
+public/
+static/
+assets/
+
+# 类型定义文件（如果不需要检查）
+*.d.ts
+
+# 其他
+.eslintcache
