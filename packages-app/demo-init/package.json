@@ -21,7 +21,8 @@
     "start:no-mock": "cross-env MOCK=none UMI_ENV=dev max dev",
     "start:pre": "cross-env REACT_APP_ENV=pre UMI_ENV=dev max dev",
     "start:test": "cross-env REACT_APP_ENV=test MOCK=none UMI_ENV=dev max dev",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc --noEmit",
+    "clear": "rm -rf node_modules && rm -rf dist && rm -fr ./src/.umi"
   },
   "browserslist": [
     "defaults"
