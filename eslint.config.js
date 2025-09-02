@@ -17,6 +17,9 @@ export default [
       "forge.env.d.ts",
       "**/.umi/**",
       ".pnpm-store"
-    ]
+    ],
+    rules: {
+      "indent": "off"
+    }
   }
 ];
