@@ -1,20 +1,29 @@
-import { history, useIntl } from '@umijs/max';
-import { Button, Card, Result } from 'antd';
-import React from 'react';
+import React from "react";
 
-const NoFoundPage: React.FC = () => (
-  <Card variant="borderless">
+import {
+  history, useIntl
+} from "@umijs/max";
+import {
+  Button, Card, Result
+} from "antd";
+
+function NoFoundPage() {
+  return <Card variant="borderless">
     <Result
-      status="404"
-      title="404"
-      subTitle={useIntl().formatMessage({ id: 'pages.404.subTitle' })}
       extra={
-        <Button type="primary" onClick={() => history.push('/')}>
-          {useIntl().formatMessage({ id: 'pages.404.buttonText' })}
+        <Button onClick={() => history.push("/")}
+          type="primary">
+          {useIntl().formatMessage({
+            id: "pages.404.buttonText"
+          })}
         </Button>
       }
-    />
-  </Card>
-);
+      status="404"
+      subTitle={useIntl().formatMessage({
+        id: "pages.404.subTitle"
+      })}
+      title="404"/>
+  </Card>;
+}
 
 export default NoFoundPage;

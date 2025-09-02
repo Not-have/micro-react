@@ -18,8 +18,6 @@ export default [
       "**/.umi/**",
       ".pnpm-store"
     ],
-    rules: {
-      "indent": "off"
-    }
+    rules: {}
   }
 ];

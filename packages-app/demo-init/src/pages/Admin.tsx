@@ -1,16 +1,16 @@
 import React from "react";
 
 import {
- HeartTwoTone, SmileTwoTone
+  HeartTwoTone, SmileTwoTone
 } from "@ant-design/icons";
 import {
- PageContainer
+  PageContainer
 } from "@ant-design/pro-components";
 import {
- useIntl
+  useIntl
 } from "@umijs/max";
 import {
- Alert, Card, Typography
+  Alert, Card, Typography
 } from "antd";
 
 function Admin(): React.ReactElement {
