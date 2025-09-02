@@ -2,8 +2,10 @@
   "name": "micro-react-ant-design",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "private": true,
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
@@ -13,9 +15,6 @@
     "clear": "rm -fr node_modules && rm -fr .pnpm-store && rm -fr pnpm-lock.yaml && pnpm --filter \"./packages-**/**\" clear",
     "boot": "pnpm run clear && pnpm install"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@biomejs/biome": "^2.2.2",
     "@commitlint/cli": "^19.8.1",
