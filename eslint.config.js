@@ -2,8 +2,8 @@ import EsLint, { react, typescript } from '@mt-kit/eslint-config';
 
 export default [
   ...EsLint,
-  react,
   typescript,
+  ...react,
   {
     ignores: [
       '.vite',
