@@ -1,2 +1,7 @@
 packages:
-  - "packages-app/**"
+  - packages-app/**
+catalog:
+  "@types/react": ^18.0.33
+  "@types/react-dom": ^18.0.11
+  typescript: ^5.0.3
+  umi: ^4.4.12

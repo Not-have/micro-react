@@ -10,11 +10,11 @@
     "clear": "rm -fr node_modules && rm -fr ./src/.umi"
   },
   "dependencies": {
-    "umi": "^4.4.12"
+    "umi": "catalog:"
   },
   "devDependencies": {
-    "@types/react": "^18.0.33",
-    "@types/react-dom": "^18.0.11",
-    "typescript": "^5.0.3"
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "typescript": "catalog:"
   }
 }
