@@ -1,18 +1,20 @@
 {
-  "name": "micro-react-ant-design",
+  "name": "micro-umi",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "license": "ISC",
   "author": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clear": "rm -fr node_modules && rm -fr .pnpm-store && rm -fr pnpm-lock.yaml && pnpm --filter \"./packages-**/**\" clear && pnpm --filter \"./package-**\" clear",
     "boot": "pnpm run clear && pnpm install",
-    "fix": "eslint \"./**/*.{tsx,ts,js,html}\" --fix"
+    "fix:eslint": "eslint \"./**/*.{tsx,ts,js,html}\" --fix",
+    "fix:stylelint": "stylelint \"./**/*.{tsx,ts,js,html}\" --fix"
   },
   "devDependencies": {
     "@mt-kit/eslint-config": "catalog:",
-    "eslint": "catalog:"
+    "@mt-kit/stylelint-config": "catalog:",
+    "eslint": "catalog:",
+    "stylelint": "catalog:"
   }
 }
