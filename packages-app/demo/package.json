@@ -9,7 +9,7 @@
     "build": "max build",
     "postinstall": "max setup",
     "setup": "max setup",
-    "clear": "rm -fr node_modules && rm -fr ./src/.umi"
+    "clear": "rm -fr node_modules && rm -fr ./src/.umi && rm -fr dist"
   },
   "dependencies": {
     "@umijs/max": "catalog:"
