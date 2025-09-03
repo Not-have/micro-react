@@ -7,21 +7,21 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: {
-    title: '1111',
+    title: 'demo',
   },
   routes: [
     {
       path: '/',
-      redirect: '/home',
+      redirect: '/index',
     },
     {
       name: '首页',
-      path: '/home',
+      path: '/index',
       component: './index',
     },
     {
-      name: '权限演示',
-      path: '/access',
+      name: '演示',
+      path: '/docs',
       component: './docs',
     }
   ],
