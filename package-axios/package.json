@@ -1,0 +1,20 @@
+{
+  "name": "micro-umi-axios",
+  "version": "1.0.0",
+  "description": "micro-umi-axios",
+  "keywords": [],
+  "license": "ISC",
+  "author": "LiYong",
+  "scripts": {
+    "clear": "rm -fr node_modules && rm -fr dist"
+  },
+  "main": "./src/index.ts",
+  "dependencies": {
+    "@mt-kit/request-axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "@mt-kit/ts-config": "^1.1.0",
+    "@types/node": "^24.3.0",
+    "typescript": "catalog:"
+  }
+}
