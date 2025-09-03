@@ -1,6 +1,0 @@
-packages-**/**/node_modules/**
-packages-**/**/dist/**
-packages-**/**/build/**
-packages-**/**/src/.umi/**
-packages-**/**/src/.umi-production/**
-packages-**/**/src/.umi-test/**

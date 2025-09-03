@@ -1,4 +1,6 @@
-import { defineConfig } from '@umijs/max';
+import {
+  defineConfig
+} from "@umijs/max";
 
 export default defineConfig({
   antd: {},
@@ -7,23 +9,23 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: {
-    title: 'demo',
+    title: "demo"
   },
   routes: [
     {
-      path: '/',
-      redirect: '/index',
+      path: "/",
+      redirect: "/index"
     },
     {
-      name: '首页',
-      path: '/index',
-      component: './index',
+      name: "首页",
+      path: "/index",
+      component: "./index"
     },
     {
-      name: '演示',
-      path: '/docs',
-      component: './docs',
+      name: "演示",
+      path: "/docs",
+      component: "./docs"
     }
   ],
-  npmClient: 'pnpm',
+  npmClient: "pnpm"
 });

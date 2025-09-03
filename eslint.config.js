@@ -9,10 +9,13 @@ export default [
   ...react,
   {
     ignores: [
-      ".vite",
-      "node_modules",
-      ".pnpm-store",
-      "pnpm-lock.yaml"
+      "node_modules/**",
+      "packages-**/**/node_modules/**",
+      "packages-**/**/dist/**",
+      "packages-**/**/build/**",
+      "packages-**/**/src/.umi/**",
+      "packages-**/**/src/.umi-production/**",
+      "packages-**/**/src/.umi-test/**"
     ]
   }
 ];
