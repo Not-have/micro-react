@@ -5,6 +5,7 @@
   "keywords": [],
   "license": "ISC",
   "author": "",
+  "type": "module",
   "scripts": {
     "clear": "rm -fr node_modules && rm -fr .pnpm-store && rm -fr pnpm-lock.yaml && pnpm --filter \"./packages-**/**\" clear && pnpm --filter \"./package-**\" clear",
     "boot": "pnpm run clear && pnpm install",
@@ -13,8 +14,10 @@
   },
   "devDependencies": {
     "@mt-kit/eslint-config": "catalog:",
+    "@mt-kit/prettier-config": "catalog:",
     "@mt-kit/stylelint-config": "catalog:",
     "eslint": "catalog:",
+    "prettier": "catalog:",
     "stylelint": "catalog:"
   }
 }

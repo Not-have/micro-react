@@ -3,6 +3,7 @@ packages:
   - package-**
 catalog:
   "@mt-kit/eslint-config": ^2.3.0
+  "@mt-kit/prettier-config": ^1.2.1
   "@mt-kit/request-axios": ^1.4.0
   "@mt-kit/stylelint-config": ^2.1.0
   "@mt-kit/ts-config": ^1.2.1
@@ -11,5 +12,6 @@ catalog:
   "@types/react-dom": ^18.0.11
   "@umijs/max": ^4.4.12
   eslint: ^9.34.0
+  prettier: ^3.6.2
   stylelint: ^16.23.1
   typescript: 5.9.2
