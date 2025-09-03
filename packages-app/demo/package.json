@@ -11,12 +11,12 @@
     "setup": "max setup",
     "clear": "rm -fr node_modules && rm -fr ./src/.umi"
   },
+  "dependencies": {
+    "@umijs/max": "catalog:"
+  },
   "devDependencies": {
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "typescript": "catalog:"
-  },
-  "dependencies": {
-    "@umijs/max": "catalog:"
   }
 }
