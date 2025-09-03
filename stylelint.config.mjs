@@ -13,9 +13,14 @@ export default {
     "**/*.js",
     "**/*.ts",
     "node_modules/**",
+    "**/node_modules/**",
     "**/.umi/**",
-    "dist/**",
-    "**/*.md"
+    "**/.umi-production/**",
+    "**/.umi-test/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/*.md",
+    "pnpm-store/**"
   ],
   root: true
 };

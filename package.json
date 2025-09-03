@@ -9,7 +9,7 @@
     "clear": "rm -fr node_modules && rm -fr .pnpm-store && rm -fr pnpm-lock.yaml && pnpm --filter \"./packages-**/**\" clear && pnpm --filter \"./package-**\" clear",
     "boot": "pnpm run clear && pnpm install",
     "fix:eslint": "eslint \"./**/*.{tsx,ts,js,html}\" --fix",
-    "fix:stylelint": "stylelint \"./**/*.{tsx,ts,js,html}\" --fix"
+    "fix:stylelint": "stylelint \"./**/*.{css,less,tsx}\" --fix"
   },
   "devDependencies": {
     "@mt-kit/eslint-config": "catalog:",
