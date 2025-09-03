@@ -10,11 +10,11 @@
   },
   "main": "./src/index.ts",
   "dependencies": {
-    "@mt-kit/request-axios": "^1.4.0"
+    "@mt-kit/request-axios": "catalog:"
   },
   "devDependencies": {
-    "@mt-kit/ts-config": "^1.1.0",
-    "@types/node": "^24.3.0",
+    "@mt-kit/ts-config": "catalog:",
+    "@types/node": "catalog:",
     "typescript": "catalog:"
   }
 }
