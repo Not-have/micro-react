@@ -1,17 +1,22 @@
 {
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "demo",
   "private": true,
   "author": "李勇 <2236472089@qq.com>",
   "scripts": {
-    "dev": "umi dev",
-    "build": "umi build",
-    "postinstall": "umi setup",
-    "setup": "umi setup",
-    "start": "npm run dev",
+    "start": "max dev",
+    "build": "max build",
+    "postinstall": "max setup",
+    "setup": "max setup",
     "clear": "rm -fr node_modules && rm -fr ./src/.umi"
   },
   "devDependencies": {
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "typescript": "catalog:"
+  },
+  "dependencies": {
+    "@umijs/max": "catalog:"
   }
 }
