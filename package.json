@@ -2,13 +2,18 @@
   "name": "micro-react-ant-design",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clear": "rm -fr node_modules && rm -fr .pnpm-store && rm -fr pnpm-lock.yaml && pnpm --filter \"./packages-**/**\" clear",
-    "boot": "pnpm run clear && pnpm install"
+    "boot": "pnpm run clear && pnpm install",
+    "fix": "eslint \"./**/*.{tsx,ts,js,html}\" --fix"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "main": "index.js",
+  "devDependencies": {
+    "@mt-kit/eslint-config": "^2.3.0",
+    "eslint": "^9.34.0"
+  }
 }
