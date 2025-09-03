@@ -9,9 +9,6 @@
     "start": "npm run dev",
     "clear": "rm -fr node_modules && rm -fr ./src/.umi"
   },
-  "dependencies": {
-    "umi": "catalog:"
-  },
   "devDependencies": {
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
