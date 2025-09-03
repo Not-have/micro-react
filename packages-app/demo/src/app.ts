@@ -1,4 +1,5 @@
 // 运行时配置
+import './app.css';
 
 // 抑制 findDOMNode 弃用警告（临时解决方案）
 if (process.env.NODE_ENV === 'development') {
