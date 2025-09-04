@@ -11,7 +11,22 @@ export default defineConfig({
   layout: {
     title: "demo"
   },
+  proxy: {
+    "/api": {
+      target: "http://localhost:3000",
+      changeOrigin: true,
+      pathRewrite: {
+        "^/api": ""
+      }
+    }
+  },
   routes: [
+    {
+      path: "/login",
+      name: "登录",
+      component: "./login",
+      layout: false
+    },
     {
       path: "/",
       redirect: "/index"

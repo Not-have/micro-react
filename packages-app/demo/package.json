@@ -12,6 +12,7 @@
     "clear": "rm -fr node_modules && rm -fr ./src/.umi && rm -fr dist"
   },
   "dependencies": {
+    "@micro-umi/api": "workspace:^",
     "@umijs/max": "catalog:"
   },
   "devDependencies": {
