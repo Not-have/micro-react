@@ -26,7 +26,7 @@ export async function getInitialState(): Promise<{ name: string } | undefined> {
   } = location;
 
   if(!localStorage.getItem("token") && pathname !== Router.LOGIN) {
-    window.location.href = Router.LOGIN;
+    window.location.href = `${Router.LOGIN}?redirect=${pathname}`;
 
     return;
   }
