@@ -12,6 +12,7 @@
     "clear": "rm -fr node_modules && rm -fr ./src/.umi && rm -fr dist"
   },
   "dependencies": {
+    "@ant-design/icons": "catalog:",
     "@micro-umi/api": "workspace:^",
     "@umijs/max": "catalog:",
     "antd": "catalog:"
