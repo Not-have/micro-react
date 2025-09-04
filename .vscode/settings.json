@@ -15,12 +15,5 @@
   "stylelint.snippet": ["css", "less", "postcss", "scss"],
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "typescript.preferences.includePackageJsonAutoImports": "on",
-  "explorer.fileNesting.patterns": {
-    "tsconfig.json": "tsconfig.*.json, env.d.ts",
-    "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
-    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .code-workspace, .browserslistrc, .node-version, .gitignore, .editorconfig, .npmrc, .gitattributes, tsconfig.json",
-    "eslint.config.js": ".eslint*, .oxlint*, .prettier*, depcheck.config.js, .npmpackagejsonlintrc.cjs, cspell.json, commitlint.config.cjs, .npmpackagejsonlintrc-ignore, .depcheckrc.yml, .markdownlint.yaml, stylelint.config.mjs",
-    "README.md": "LICENSE, CHANGELOG.md"
-  }
+  "typescript.preferences.includePackageJsonAutoImports": "on"
 }
