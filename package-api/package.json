@@ -1,7 +1,7 @@
 {
-  "name": "@micro-umi/axios",
+  "name": "@micro-umi/api",
   "version": "1.0.0",
-  "description": "micro-umi-axios",
+  "description": "micro-umi-api",
   "keywords": [],
   "license": "ISC",
   "author": "LiYong",
@@ -10,7 +10,7 @@
   },
   "main": "./src/index.ts",
   "dependencies": {
-    "@mt-kit/request-axios": "catalog:"
+    "@micro-umi/axios": "workspace:^"
   },
   "devDependencies": {
     "@mt-kit/ts-config": "catalog:",
