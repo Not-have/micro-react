@@ -3,17 +3,17 @@ import {
 } from "./enum";
 
 // 抑制 findDOMNode 弃用警告（临时解决方案）
-if (process.env.NODE_ENV === "development") {
+// if (process.env.NODE_ENV === "development") {
 
-  console.error = (...args) => {
-    if (typeof args[0] === "string" && args[0].includes("findDOMNode")) {
+//   console.error = (...args) => {
+//     if (typeof args[0] === "string" && args[0].includes("findDOMNode")) {
 
-      // eslint-disable-next-line no-useless-return
-      return;
-    }
+//       // eslint-disable-next-line no-useless-return
+//       return;
+//     }
 
-  };
-}
+//   };
+// }
 
 // 全局初始化数据配置，用于 Layout 用户信息和权限初始化
 // 更多信息见文档：https://umijs.org/docs/api/runtime-config#getinitialstate

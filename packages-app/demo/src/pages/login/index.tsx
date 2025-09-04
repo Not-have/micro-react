@@ -14,15 +14,14 @@ export default function Login(): React.ReactElement {
     dataLogin({
       username: "admin",
       password: "123456"
-    }).catch(error => {
-      console.log(error);
+    }).then(() => {
+      const urlParams = new URL(window.location.href).searchParams;
+
+      window.location.href = urlParams.get("redirect") || "/";
+
+      localStorage.setItem("token", "123456");
     });
 
-    // const urlParams = new URL(window.location.href).searchParams;
-
-    // window.location.href = urlParams.get("redirect") || "/";
-
-    // localStorage.setItem("token", "123456");
   }, []);
 
   return <div>
