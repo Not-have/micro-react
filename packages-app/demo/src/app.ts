@@ -4,14 +4,14 @@ import {
 
 // 抑制 findDOMNode 弃用警告（临时解决方案）
 if (process.env.NODE_ENV === "development") {
-  const originalError = console.error;
 
   console.error = (...args) => {
     if (typeof args[0] === "string" && args[0].includes("findDOMNode")) {
+
+      // eslint-disable-next-line no-useless-return
       return;
     }
 
-    originalError.call(console, ...args);
   };
 }
 

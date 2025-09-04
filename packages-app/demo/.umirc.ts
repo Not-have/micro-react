@@ -8,18 +8,21 @@ export default defineConfig({
   model: {},
   initialState: {},
   request: {},
+  mock: {}, // 启用 mock 功能
   layout: {
     title: "demo"
   },
-  proxy: {
-    "/api": {
-      target: "http://localhost:3000",
-      changeOrigin: true,
-      pathRewrite: {
-        "^/api": ""
-      }
-    }
-  },
+
+  // 移除代理配置，使用 UmiJS 内置的 mock 功能
+  // proxy: {
+  //   "/api": {
+  //     target: "http://localhost:3000",
+  //     changeOrigin: true,
+  //     pathRewrite: {
+  //       "^/api": ""
+  //     }
+  //   }
+  // },
   routes: [
     {
       path: "/login",

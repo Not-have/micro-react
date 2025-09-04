@@ -3,16 +3,26 @@ import React, {
 } from "react";
 
 import {
+  dataLogin
+} from "@micro-umi/api";
+import {
   Button
 } from "antd";
 
 export default function Login(): React.ReactElement {
   const handleClick = useCallback(() => {
-    const urlParams = new URL(window.location.href).searchParams;
+    dataLogin({
+      username: "admin",
+      password: "123456"
+    }).catch(error => {
+      console.log(error);
+    });
 
-    window.location.href = urlParams.get("redirect") || "/";
+    // const urlParams = new URL(window.location.href).searchParams;
 
-    localStorage.setItem("token", "123456");
+    // window.location.href = urlParams.get("redirect") || "/";
+
+    // localStorage.setItem("token", "123456");
   }, []);
 
   return <div>

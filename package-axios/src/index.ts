@@ -5,6 +5,9 @@ import RequestClient, {
   formatToken,
   RequestClientOptions
 } from "@mt-kit/request-axios";
+import {
+  message as Message
+} from "antd";
 
 /**
  * 接口地址
@@ -62,8 +65,12 @@ function createRequestClient(
 
   // 通用的错误处理,如果没有进入上面的错误处理逻辑，就会进入这里
   client.addResponseInterceptor(errorMessageResponseInterceptor({
-    errorFn: error => {
-      console.error(error);
+    errorFn: (message, error) => {
+      console.error(message, error);
+
+      if(message) {
+        Message.error(message);
+      }
     }
   }));
 

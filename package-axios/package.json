@@ -10,7 +10,8 @@
   },
   "main": "./src/index.ts",
   "dependencies": {
-    "@mt-kit/request-axios": "catalog:"
+    "@mt-kit/request-axios": "catalog:",
+    "antd": "catalog:"
   },
   "devDependencies": {
     "@mt-kit/ts-config": "catalog:",
