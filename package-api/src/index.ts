@@ -1,4 +1,4 @@
-export {
+export type {
   IDataLogin as DataLogin
 } from "./types";
 
