@@ -1,17 +1,17 @@
 packages:
   - packages-app/**
   - package-**
-
 catalog:
-  '@mt-kit/eslint-config': ^2.3.0
-  '@mt-kit/prettier-config': ^1.2.1
-  '@mt-kit/request-axios': ^1.4.0
-  '@mt-kit/stylelint-config': ^2.1.0
-  '@mt-kit/ts-config': 1.2.1
-  '@types/node': 24.3.1
-  '@types/react': ^18.0.33
-  '@types/react-dom': ^18.0.11
-  '@umijs/max': ^4.4.12
+  "@mt-kit/eslint-config": ^2.3.0
+  "@mt-kit/prettier-config": ^1.2.1
+  "@mt-kit/request-axios": ^1.4.0
+  "@mt-kit/stylelint-config": ^2.1.0
+  "@mt-kit/ts-config": 1.2.1
+  "@types/node": 24.3.1
+  "@types/react": ^18.0.33
+  "@types/react-dom": ^18.0.11
+  "@umijs/max": ^4.4.12
+  antd: ^5.27.2
   eslint: ^9.34.0
   prettier: ^3.6.2
   stylelint: ^16.23.1

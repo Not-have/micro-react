@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "@micro-umi/api": "workspace:^",
-    "@umijs/max": "catalog:"
+    "@umijs/max": "catalog:",
+    "antd": "catalog:"
   },
   "devDependencies": {
     "@types/react": "catalog:",
