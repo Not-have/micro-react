@@ -1,5 +1,7 @@
 export type {
   IDataLogin as DataLogin,
+  IDataUserInfo as DataUserInfo,
+
   IParamsDataLogin as ParamsDataLogin
 } from "./types";
 
