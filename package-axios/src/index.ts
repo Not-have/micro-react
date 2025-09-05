@@ -1,5 +1,6 @@
 import {
-  LocalToken
+  LocalToken,
+  Router
 } from "@micro-umi/enum";
 import RequestClient, {
   authenticateResponseInterceptor,
@@ -37,6 +38,21 @@ function createRequestClient(
    */
   async function doReAuthenticate(): Promise<void> {
     console.warn("Access token or refresh token is invalid or expired. ");
+
+    localStorageHelper.delete(LocalToken.TOKEN);
+    localStorageHelper.delete(LocalToken.REFRESH_TOKEN);
+
+    // 回登录页带上当前路由地址
+    const currentPath = window.location.pathname + window.location.search;
+
+    const loginUrl = `${Router.LOGIN}?redirect=${encodeURIComponent(currentPath)}`;
+
+    // 替换当前历史记录，确保用户无法回退到之前的页面
+    window.history.replaceState({}, "", loginUrl);
+
+    // 触发路由变化
+    window.dispatchEvent(new PopStateEvent("popstate"));
+
   }
 
   /**
