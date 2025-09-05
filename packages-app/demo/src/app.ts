@@ -9,6 +9,7 @@ import {
 
 // 全局初始化数据配置，用于 Layout 用户信息和权限初始化
 // 更多信息见文档：https://umijs.org/docs/api/runtime-config#getinitialstate
+// 获取 useModel("@@initialState");
 export async function getInitialState(): Promise<DataUserInfo | undefined> {
 
   // 修复：History 类型上不存在 location 属性，且移除不允许的 console.log
