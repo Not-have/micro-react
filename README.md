@@ -8,7 +8,7 @@ pnpm run boot
 
 ## 打包后，本机预览
 
-```
+```bash
 # 自带的预览方式
 pnpm preview
 ```
