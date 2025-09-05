@@ -2,6 +2,9 @@ import {
   dataUserInfo,
   DataUserInfo
 } from "@micro-umi/api";
+import {
+  LocalToken
+} from "@micro-umi/enum";
 
 import {
   Router
@@ -9,7 +12,7 @@ import {
 
 // 全局初始化数据配置，用于 Layout 用户信息和权限初始化
 // 更多信息见文档：https://umijs.org/docs/api/runtime-config#getinitialstate
-// 获取 useModel("@@initialState");
+// 获取
 export async function getInitialState(): Promise<DataUserInfo | undefined> {
 
   // 修复：History 类型上不存在 location 属性，且移除不允许的 console.log
@@ -18,17 +21,16 @@ export async function getInitialState(): Promise<DataUserInfo | undefined> {
     pathname
   } = location;
 
-  const root = Router.ROOT;
+  const token = localStorage.getItem(LocalToken.TOKEN);
 
-  if(!localStorage.getItem("token") && pathname !== Router.LOGIN) {
-
-    window.location.href = pathname === root ? Router.LOGIN : `${root}?redirect=${pathname}`;
+  if(!token && pathname !== Router.LOGIN) {
+    window.location.href = `${Router.LOGIN}?redirect=${pathname}`;
 
     return;
   }
 
-  if(localStorage.getItem("token") && pathname === Router.LOGIN) {
-    window.location.href = root;
+  if(token && pathname === Router.LOGIN) {
+    window.location.href = Router.ROOT;
   }
 
   const userInfo = await dataUserInfo();
