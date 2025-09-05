@@ -15,10 +15,11 @@
   "dependencies": {
     "@ant-design/icons": "catalog:",
     "@micro-umi/api": "workspace:^",
+    "@mt-kit/react-hooks": "catalog:",
     "@mt-kit/utils": "catalog:",
     "@umijs/max": "catalog:",
     "antd": "catalog:",
-    "styled-components": "^6.1.19"
+    "styled-components": "catalog:"
   },
   "devDependencies": {
     "@micro-umi/enum": "workspace:^",

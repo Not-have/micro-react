@@ -7,7 +7,8 @@ import {
 } from "@micro-umi/enum";
 
 import {
-  AvatarName
+  RcAvatarName,
+  RcUserSettings
 } from "./components";
 import {
   Router
@@ -57,7 +58,10 @@ export const layout = ({
   layout: "mix",
   avatarProps: {
     src: initialState?.avatar,
-    title: <AvatarName />
+    title: <RcAvatarName />,
+    render: (_: unknown, avatarChildren: React.ReactNode) => <RcUserSettings>
+      {avatarChildren}
+    </RcUserSettings>
   }
 
   // navTheme: "realDark",
