@@ -12,6 +12,7 @@ export default defineConfig({
   layout: {
     title: "demo"
   },
+  esbuildMinifyIIFE: true, // 修复 esbuild 辅助函数冲突
 
   // 移除代理配置，使用 UmiJS 内置的 mock 功能
   // proxy: {
