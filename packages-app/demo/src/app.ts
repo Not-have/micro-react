@@ -33,6 +33,10 @@ export async function getInitialState(): Promise<DataUserInfo | undefined> {
     window.location.href = Router.ROOT;
   }
 
+  if(!token) {
+    return;
+  }
+
   const userInfo = await dataUserInfo();
 
   return userInfo;
