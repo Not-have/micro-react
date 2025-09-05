@@ -8,6 +8,5 @@ import {
  * 获取用户信息
  */
 export default function dataUserInfo(): Promise<IDataUserInfo> {
-
   return request.get<IDataUserInfo>("/api/user-info");
 }

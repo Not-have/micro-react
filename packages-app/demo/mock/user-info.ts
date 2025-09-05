@@ -3,7 +3,7 @@ export default {
     res.json({
       code: 200,
       data: {
-        username: "admin",
+        name: "admin",
         email: "2236472089@qq.com",
         avatar: "https://avatars.githubusercontent.com/u/123456789?v=4",
         phone: "12345678901"

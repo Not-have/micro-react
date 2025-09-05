@@ -4,7 +4,7 @@ export interface IDataLogin {
 }
 
 export interface IDataUserInfo {
-  username: string;
+  name: string;
   email: string;
   avatar: string;
   phone: string;
