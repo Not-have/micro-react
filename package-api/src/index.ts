@@ -4,3 +4,4 @@ export type {
 } from "./types";
 
 export { default as dataLogin } from "./data-login";
+export { default as dataUserInfo } from "./data-user-info";

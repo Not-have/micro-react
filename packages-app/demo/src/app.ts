@@ -12,14 +12,17 @@ export async function getInitialState(): Promise<{ name: string } | undefined> {
     pathname
   } = location;
 
+  const root = Router.ROOT;
+
   if(!localStorage.getItem("token") && pathname !== Router.LOGIN) {
-    window.location.href = `${Router.LOGIN}?redirect=${pathname}`;
+
+    window.location.href = pathname === root ? Router.LOGIN : `${root}?redirect=${pathname}`;
 
     return;
   }
 
   if(localStorage.getItem("token") && pathname === Router.LOGIN) {
-    window.location.href = Router.ROOT;
+    window.location.href = root;
   }
 
   return {
