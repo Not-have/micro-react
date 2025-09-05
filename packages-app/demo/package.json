@@ -15,7 +15,7 @@
   "dependencies": {
     "@ant-design/icons": "catalog:",
     "@micro-umi/api": "workspace:^",
-    "@mt-kit/utils": "^1.0.1",
+    "@mt-kit/utils": "catalog:",
     "@umijs/max": "catalog:",
     "antd": "catalog:"
   },

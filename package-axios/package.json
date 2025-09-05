@@ -13,7 +13,7 @@
     "@micro-umi/api": "workspace:^",
     "@micro-umi/enum": "workspace:^",
     "@mt-kit/request-axios": "catalog:",
-    "@mt-kit/utils": "^1.0.1",
+    "@mt-kit/utils": "catalog:",
     "antd": "catalog:"
   },
   "devDependencies": {
