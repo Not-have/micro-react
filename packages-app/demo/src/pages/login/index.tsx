@@ -13,6 +13,12 @@ import {
   dataLogin
 } from "@micro-umi/api";
 import {
+  LocalToken
+} from "@micro-umi/enum";
+import {
+  localStorageHelper
+} from "@mt-kit/utils";
+import {
   Button,
   Card,
   Form,
@@ -48,7 +54,15 @@ export default function Login(): React.ReactElement {
       message.success("登录成功！");
 
       // 保存 token
-      localStorage.setItem("token", result.token);
+      localStorageHelper.set({
+        key: LocalToken.TOKEN,
+        value: result.token
+      });
+
+      localStorageHelper.set({
+        key: LocalToken.REFRESH_TOKEN,
+        value: result.refreshToken
+      });
 
       // 跳转页面
       const urlParams = new URL(window.location.href).searchParams;
@@ -57,7 +71,6 @@ export default function Login(): React.ReactElement {
 
     } catch (error) {
       console.error("登录失败:", error);
-      message.error("登录失败，请检查用户名和密码");
     } finally {
       setLoading(false);
     }

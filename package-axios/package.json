@@ -10,7 +10,9 @@
   },
   "main": "./src/index.ts",
   "dependencies": {
+    "@micro-umi/enum": "workspace:^",
     "@mt-kit/request-axios": "catalog:",
+    "@mt-kit/utils": "^1.0.1",
     "antd": "catalog:"
   },
   "devDependencies": {

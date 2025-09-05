@@ -1,3 +1,6 @@
+import {
+  LocalToken
+} from "@micro-umi/enum";
 import RequestClient, {
   authenticateResponseInterceptor,
   defaultResponseInterceptor,
@@ -5,6 +8,9 @@ import RequestClient, {
   formatToken,
   RequestClientOptions
 } from "@mt-kit/request-axios";
+import {
+  localStorageHelper
+} from "@mt-kit/utils";
 import {
   message as Message
 } from "antd";
@@ -45,8 +51,9 @@ function createRequestClient(
   // 请求头处理
   client.addRequestInterceptor({
     fulfilled: async config => {
+      const token = localStorageHelper.get<string>(LocalToken.TOKEN);
 
-      config.headers.Authorization = formatToken("");
+      config.headers.Authorization = formatToken(token);
 
       return config;
     }
