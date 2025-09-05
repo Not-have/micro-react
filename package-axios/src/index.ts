@@ -13,6 +13,9 @@ import {
   localStorageHelper
 } from "@mt-kit/utils";
 import {
+  dataRefreshToken
+} from "@micro-umi/api"
+import {
   message as Message
 } from "antd";
 
@@ -59,9 +62,24 @@ function createRequestClient(
    * 刷新token逻辑
    */
   async function doRefreshToken(): Promise<string> {
-    console.warn("刷新 token 逻辑");
+    const refreshToken = localStorageHelper.get<string>(LocalToken.REFRESH_TOKEN) || "";
 
-    return "";
+    const {
+      refresh_token,
+      token
+    } = await dataRefreshToken(refreshToken);
+
+    localStorageHelper.set({
+      key: LocalToken.TOKEN,
+      value: token
+    });
+
+    localStorageHelper.set({
+      key: LocalToken.REFRESH_TOKEN,
+      value: refresh_token
+    });
+
+    return token;
   }
 
   // 请求头处理
