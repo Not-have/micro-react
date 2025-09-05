@@ -7,6 +7,9 @@ import {
 } from "@micro-umi/enum";
 
 import {
+  AvatarName
+} from "./components";
+import {
   Router
 } from "./enum";
 
@@ -42,10 +45,22 @@ export async function getInitialState(): Promise<DataUserInfo | undefined> {
   return userInfo;
 }
 
-export const layout = () => ({
+export const layout = ({
+  initialState
+}: {
+  initialState: DataUserInfo;
+}) => ({
   logo: "https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg",
   menu: {
     locale: false
   },
-  layout: "mix"
+  layout: "mix",
+  avatarProps: {
+    src: initialState?.avatar,
+    title: <AvatarName />
+  }
+
+  // navTheme: "realDark",
+
+  // colorPrimary: "#F5222D"
 });

@@ -17,7 +17,8 @@
     "@micro-umi/api": "workspace:^",
     "@mt-kit/utils": "catalog:",
     "@umijs/max": "catalog:",
-    "antd": "catalog:"
+    "antd": "catalog:",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@micro-umi/enum": "workspace:^",
