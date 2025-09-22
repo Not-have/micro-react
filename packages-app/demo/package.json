@@ -15,6 +15,7 @@
   "dependencies": {
     "@ant-design/icons": "catalog:",
     "@micro-umi/api": "workspace:^",
+    "@mt-kit/react-ant-design-extra": "^1.0.1",
     "@mt-kit/react-hooks": "catalog:",
     "@mt-kit/utils": "catalog:",
     "@umijs/max": "catalog:",
